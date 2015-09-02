@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Youtube API practice</title>
+
+	<style>
+		body {
+			margin-left: 0;
+			margin-right: 0;
+		}
+		button { height: 2.34em; }
+		img {
+			max-width: 90%;
+			height: auto;
+		}
+		h1 {
+			padding: 0.25em 0;
+			margin: 0 auto 1em;
+			background-color: red;
+			color: white;
+		}
+		.page-container { width: 100%; }
+		.video-container { text-align: center; }
+		.video-display {
+			width: 90%;
+			margin: 0 auto;
+		}
+		#query {
+			width: 30%;
+			height: 2em;
+			vertical-align: bottom;
+			padding: 0 5px;
+		}
+	</style>
+
+</head>
+<body>
+	<div class="page-container">
+		<div class="video-container">
+			<h1>YouTube Search App</h1>
+				<div class="form-container">
+					<form action="" id="search-term">
+						<input type="text" name="query" id="query" placeholder="Search...">
+						<button>Search...</button>
+					</form>
+				</div>
+			<div id="search-results"></div>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+			<script src="APPS/apps.js"></script>
+		</div><!-- .video-container -->
+	</div><!-- .page-container -->
+</body>
+</html>
